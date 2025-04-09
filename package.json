@@ -1,5 +1,5 @@
 {
-  "name": "utils-library-components",
+  "name": "utilify.tools",
   "author": "Everton Xavier",
   "version": "0.0.1",
   "license": "MIT",
@@ -19,7 +19,9 @@
     "lint": "tsdx lint src",
     "prepare": "tsdx build",
     "size": "size-limit",
-    "analyze": "size-limit --why"
+    "analyze": "size-limit --why",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "peerDependencies": {
     "react": ">=16"
@@ -35,19 +37,26 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "module": "dist/utils-library-components.esm.js",
+  "module": "dist/utilify.tools.esm.js",
   "size-limit": [
     {
-      "path": "dist/utils-library-components.cjs.production.min.js",
+      "path": "dist/utilify.tools.cjs.production.min.js",
       "limit": "10 KB"
     },
     {
-      "path": "dist/utils-library-components.esm.js",
+      "path": "dist/utilify.tools.esm.js",
       "limit": "10 KB"
     }
   ],
   "devDependencies": {
     "@size-limit/preset-small-lib": "^11.2.0",
+    "@storybook/addon-essentials": "^8.6.12",
+    "@storybook/addon-interactions": "^8.6.12",
+    "@storybook/addon-onboarding": "^8.6.12",
+    "@storybook/blocks": "^8.6.12",
+    "@storybook/react": "^8.6.12",
+    "@storybook/react-vite": "^8.6.12",
+    "@storybook/test": "^8.6.12",
     "@tailwindcss/postcss": "^4.1.3",
     "@types/react": "^19.1.0",
     "@types/react-dom": "^19.1.2",
@@ -58,12 +67,14 @@
     "react-dom": "^19.1.0",
     "rollup-plugin-postcss": "^4.0.2",
     "size-limit": "^11.2.0",
+    "storybook": "^8.6.12",
     "tailwindcss": "^4.1.3",
     "tsdx": "^0.14.1",
     "tslib": "^2.8.1",
     "typescript": "^5.8.3"
   },
   "dependencies": {
-    "@rollup/plugin-replace": "^6.0.2"
+    "@rollup/plugin-replace": "^6.0.2",
+    "@shadcn/ui": "^0.0.4"
   }
 }

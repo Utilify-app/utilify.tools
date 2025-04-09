@@ -1,6 +1,5 @@
 // src/components/Button.tsx
 import React from 'react';
-import '../../global.css';
 
 export interface ButtonProps {
   variant?: 'primary' | 'secondary' | 'danger' | 'success';
