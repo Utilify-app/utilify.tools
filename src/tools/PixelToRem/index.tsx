@@ -43,45 +43,53 @@ function PixelToRem() {
 
   return (
     <Fragment>
-     <div>
-  <label htmlFor="base-input" className="block text-sm font-medium text-gray-700 mb-1">
-    Base (font-size):
-  </label>
-  <input
-    id="base-input"
-    type="number"
-    value={base}
-    onChange={handleBaseChange}
-    className="w-full px-3 py-2 border rounded-md shadow-sm focus:ring focus:ring-blue-200"
-  />
-</div>
+      <div>
+        <label
+          htmlFor="base-input"
+          className="block text-sm font-medium text-gray-700 mb-1"
+        >
+          Base (font-size):
+        </label>
+        <input
+          id="base-input"
+          type="number"
+          value={base}
+          onChange={handleBaseChange}
+          className="w-full px-3 py-2 border rounded-md shadow-sm focus:ring focus:ring-blue-200"
+        />
+      </div>
 
+      <div>
+        <label
+          htmlFor="pixels-input"
+          className="block text-sm font-medium text-gray-700 mb-1"
+        >
+          Pixels (px):
+        </label>
+        <input
+          id="pixels-input"
+          type="number"
+          value={pxValue}
+          onChange={handlePxChange}
+          className="w-full px-3 py-2 border rounded-md shadow-sm focus:ring focus:ring-blue-200"
+        />
+      </div>
 
-<div>
-  <label htmlFor="pixels-input" className="block text-sm font-medium text-gray-700 mb-1">
-    Pixels (px):
-  </label>
-  <input
-    id="pixels-input"
-    type="number"
-    value={pxValue}
-    onChange={handlePxChange}
-    className="w-full px-3 py-2 border rounded-md shadow-sm focus:ring focus:ring-blue-200"
-  />
-</div>
-
-<div>
-  <label htmlFor="rems-input" className="block text-sm font-medium text-gray-700 mb-1">
-    Rems (rem):
-  </label>
-  <input
-    id="rems-input"
-    type="number"
-    value={remValue}
-    onChange={handleRemChange}
-    className="w-full px-3 py-2 border rounded-md shadow-sm focus:ring focus:ring-blue-200"
-  />
-</div>
+      <div>
+        <label
+          htmlFor="rems-input"
+          className="block text-sm font-medium text-gray-700 mb-1"
+        >
+          Rems (rem):
+        </label>
+        <input
+          id="rems-input"
+          type="number"
+          value={remValue}
+          onChange={handleRemChange}
+          className="w-full px-3 py-2 border rounded-md shadow-sm focus:ring focus:ring-blue-200"
+        />
+      </div>
     </Fragment>
   );
 }
