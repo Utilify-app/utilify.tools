@@ -1,4 +1,3 @@
-// tsdx.config.js
 const postcss = require('rollup-plugin-postcss');
 const replace = require('@rollup/plugin-replace');
 
